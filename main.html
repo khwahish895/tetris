@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetris Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">TETRIS</h1>
+    
+    <div class="scoreboard">
+      <div>Score: <span id="score">0</span></div>
+      <div>High Score: <span id="highscore">0</span></div>
+    </div>
+    
+    <canvas id="tetris" width="240" height="400" tabindex="-1"></canvas>
+
+    <button id="reset">Reset Game</button>
+
+    <div class="controls mobile-only">
+      <button id="left">⬅️</button>
+      <button id="rotate">🔃</button>
+      <button id="right">➡️</button>
+      <button id="down">⬇️</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
